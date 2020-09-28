@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;   
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d6d6d6da;
+    line-height: 1.4;
+    background-color: #606060;
+}
+.moi{
+  background-image: url("images/Abod.jpg");
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: 100%;
+  background-position: 124% 48%;
+}
+.header{
+    background-image: url(images/tech-darker.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 5rem;
+    height: 17rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations{
+    color: whitesmoke;
+   font-weight: bold;
+    font-size: 0.9rem; 
+    padding: 1rem;
+    line-height: 1.6;
+   
+}
+
+
+h1 {
+    color: rgb(75, 75, 75);
+    font-size: 2rem;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+     color: rgb(109, 74, 74);
+   text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px#a89a8a;
+ }
+ 
+ to {
+    color: rgb(255, 0, 0);
+   text-shadow: 0 0 20px #000000, 0 0 30px #ff0000, 0 0 40px #ffe600, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #727272, 0 1 90px #ff0000;
+ }
+}
+
+h2 {
+  margin-bottom: 0x;
+    padding-bottom: 50px;
+    font-weight: bolder;
+    color: rgb(46, 46, 46);
+    font-size: xx-large;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+ }
+ 
+ to {
+    color: rgb(206, 206, 206);
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+ }
+}
+
+.h4head{
+    color:#808080;
+    background-color: #1b1b1b;  
+    width:35%;
+    padding: 0 20px;
+}
+
+.phead{
+    color:#a0a0a0;
+}
+
+.container{
+    margin-bottom:60px;
+    padding:0;
+    display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+    "competences experiences"
+    "competences formations";
+  grid-gap: 50px;
+
+}
+
+.experiences{
+  background-image: url(images/tech-darker.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0 0 40px 40px;
+  background-color: rgb(90, 93, 100);
+    grid-area: experiences;
+   font-size: 1.2rem;
+   line-height: 2;
+}
+
+.formations{
+  padding-left: 40px;
+    grid-area: formations;
+    background-image: url(images/tech-darker.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.2rem;
+    line-height: 2;
+  
+}
+.competences{
+  width:80%;
+  background-image: url(images/tech-darker.jpg);
+  background-attachment: fixed;
+    background-size: cover;
+    grid-area: competences;
+    
+   justify-self: center;
+   padding: 10px 1px 600px 20px;
+   font-size: 1.2rem;
+   line-height: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-bottom:60px;
+    padding:0;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "competences "
+    "experiences" 
+    "formations";
+  grid-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom:60px;
+    padding:0;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  grid-template-areas: 
+    "competences "
+    "experiences" 
+    "formations";
+  grid-gap: 50px;
+  }
+}
+
+.footer{
+  display: flex;
+  padding:15px;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.lf{
+  background-color: rgb(117, 117, 117);
+  padding: 20px;
+  list-style: none;
+  
+}
+
+.lfb:hover,
+.lfb:active,
+.lfb:link,
+.lfb:visited{
+  padding: 10px;
+  list-style: none;
+  color: #000000;
+}
+
+.post{
+  color:#969696;
+    background-color: #3d3d3d; 
+    width:88%;
+}
+
+.post1{
+  color:#969696;
+    background-color: #3d3d3d; 
+    width:40%;
+}
+
+.post2{
+  color:#969696;
+    background-color: #3d3d3d; 
+    width:63%;
+}
+
+.lexp{
+  padding: 10px 0;
+}
